@@ -139,6 +139,30 @@ LOCATION:Liberty High School\, 2275 Sommers Rd\, O'Fallon\, MO 63367
 DESCRIPTION:JV boys soccer. Home vs. Helias Catholic.
 END:VEVENT
 BEGIN:VEVENT
+UID:lhs-jv-20261016-jv-gac-cup-semi@mshsaa
+DTSTAMP:20260101T000000Z
+SUMMARY:Liberty (Wentzville) Boys Soccer JV GAC Cup Semi (JV) - time TBD
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+DESCRIPTION:JV boys soccer. JV GAC Cup Semi. Start time not yet published by MSHSAA.
+END:VEVENT
+BEGIN:VEVENT
+UID:lhs-jv-20261017-jv-gac-cup-final@mshsaa
+DTSTAMP:20260101T000000Z
+SUMMARY:Liberty (Wentzville) Boys Soccer JV GAC Cup Final (JV) - time TBD
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+DESCRIPTION:JV boys soccer. JV GAC Cup Final. Start time not yet published by MSHSAA.
+END:VEVENT
+BEGIN:VEVENT
+UID:lhs-jv-20261017-sluh-tournament@mshsaa
+DTSTAMP:20260101T000000Z
+SUMMARY:Liberty (Wentzville) Boys Soccer SLUH Tournament (JV) - time TBD
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261022
+DESCRIPTION:JV boys soccer. SLUH Tournament. Start time not yet published by MSHSAA.
+END:VEVENT
+BEGIN:VEVENT
 UID:lhs-jv-20261026-ft-zumwalt-east@mshsaa
 DTSTAMP:20260101T000000Z
 SUMMARY:Liberty (Wentzville) Boys Soccer Home Game vs. Ft. Zumwalt East (JV)
