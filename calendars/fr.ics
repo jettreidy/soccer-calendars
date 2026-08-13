@@ -121,6 +121,15 @@ LOCATION:Francis Howell High School\, 7001 MO-94\, St Charles\, MO 63304
 DESCRIPTION:Fr boys soccer. Away at Francis Howell.
 END:VEVENT
 BEGIN:VEVENT
+UID:lhs-fr-20261015-warrenton@mshsaa
+DTSTAMP:20260101T000000Z
+SUMMARY:Liberty (Wentzville) Boys Soccer Away Game at Warrenton (Fr)
+DTSTART;TZID=America/Chicago:20261015T170000
+DTEND;TZID=America/Chicago:20261015T180000
+LOCATION:Warren County R-3 Warrenton High School\, 803 Pinckney\, Warrenton\, MO 63383
+DESCRIPTION:Fr boys soccer. Away at Warrenton.
+END:VEVENT
+BEGIN:VEVENT
 UID:lhs-fr-20261021-northwest-cedar-hill@mshsaa
 DTSTAMP:20260101T000000Z
 SUMMARY:Liberty (Wentzville) Boys Soccer Away Game at Northwest (Cedar Hill) (Fr)
