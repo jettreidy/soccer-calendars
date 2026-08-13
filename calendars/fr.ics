@@ -1,0 +1,132 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Liberty Wentzville Boys Soccer//Fr//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Liberty (Wentzville) Boys Soccer Fr
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:STANDARD
+DTSTART:20071104T020000
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20070311T020000
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:lhs-fr-20260901-francis-howell-north@mshsaa
+DTSTAMP:20260101T000000Z
+SUMMARY:Liberty (Wentzville) Boys Soccer Away Game at Francis Howell North (Fr)
+DTSTART;TZID=America/Chicago:20260901T163000
+DTEND;TZID=America/Chicago:20260901T173000
+LOCATION:Francis Howell North High School\, 2549 Hackmann Rd\, St Charles\, MO 63303
+DESCRIPTION:Fr boys soccer. Away at Francis Howell North.
+END:VEVENT
+BEGIN:VEVENT
+UID:lhs-fr-20260903-francis-howell@mshsaa
+DTSTAMP:20260101T000000Z
+SUMMARY:Liberty (Wentzville) Boys Soccer Home Game vs. Francis Howell (Fr)
+DTSTART;TZID=America/Chicago:20260903T163000
+DTEND;TZID=America/Chicago:20260903T173000
+LOCATION:Liberty High School\, 2275 Sommers Rd\, O'Fallon\, MO 63367
+DESCRIPTION:Fr boys soccer. Home vs. Francis Howell.
+END:VEVENT
+BEGIN:VEVENT
+UID:lhs-fr-20260908-ft-zumwalt-west@mshsaa
+DTSTAMP:20260101T000000Z
+SUMMARY:Liberty (Wentzville) Boys Soccer Away Game at Ft. Zumwalt West (Fr)
+DTSTART;TZID=America/Chicago:20260908T160000
+DTEND;TZID=America/Chicago:20260908T170000
+LOCATION:Fort Zumwalt West High School\, 1251 Turtle Creek Dr\, O'Fallon\, MO 63366
+DESCRIPTION:Fr boys soccer. Away at Ft. Zumwalt West.
+END:VEVENT
+BEGIN:VEVENT
+UID:lhs-fr-20260909-francis-howell-central@mshsaa
+DTSTAMP:20260101T000000Z
+SUMMARY:Liberty (Wentzville) Boys Soccer Away Game at Francis Howell Central (Fr)
+DTSTART;TZID=America/Chicago:20260909T161500
+DTEND;TZID=America/Chicago:20260909T171500
+LOCATION:Francis Howell Central High School\, 5199 State Rte N\, Cottleville\, MO 63304
+DESCRIPTION:Fr boys soccer. Away at Francis Howell Central.
+END:VEVENT
+BEGIN:VEVENT
+UID:lhs-fr-20260916-parkway-south@mshsaa
+DTSTAMP:20260101T000000Z
+SUMMARY:Liberty (Wentzville) Boys Soccer Home Game vs. Parkway South (Fr)
+DTSTART;TZID=America/Chicago:20260916T163000
+DTEND;TZID=America/Chicago:20260916T173000
+LOCATION:Liberty High School\, 2275 Sommers Rd\, O'Fallon\, MO 63367
+DESCRIPTION:Fr boys soccer. Home vs. Parkway South.
+END:VEVENT
+BEGIN:VEVENT
+UID:lhs-fr-20260918-marquette@mshsaa
+DTSTAMP:20260101T000000Z
+SUMMARY:Liberty (Wentzville) Boys Soccer Away Game at Marquette (Fr)
+DTSTART;TZID=America/Chicago:20260918T163000
+DTEND;TZID=America/Chicago:20260918T173000
+LOCATION:Marquette High School\, 2351 Clarkson Rd\, Chesterfield\, MO 63017
+DESCRIPTION:Fr boys soccer. Away at Marquette.
+END:VEVENT
+BEGIN:VEVENT
+UID:lhs-fr-20260921-ft-zumwalt-east@mshsaa
+DTSTAMP:20260101T000000Z
+SUMMARY:Liberty (Wentzville) Boys Soccer Home Game vs. Ft. Zumwalt East (Fr)
+DTSTART;TZID=America/Chicago:20260921T170000
+DTEND;TZID=America/Chicago:20260921T180000
+LOCATION:Liberty High School\, 2275 Sommers Rd\, O'Fallon\, MO 63367
+DESCRIPTION:Fr boys soccer. Home vs. Ft. Zumwalt East.
+END:VEVENT
+BEGIN:VEVENT
+UID:lhs-fr-20260929-christian-brothers-college@mshsaa
+DTSTAMP:20260101T000000Z
+SUMMARY:Liberty (Wentzville) Boys Soccer Home Game vs. Christian Brothers College (Fr)
+DTSTART;TZID=America/Chicago:20260929T163000
+DTEND;TZID=America/Chicago:20260929T173000
+LOCATION:Liberty High School\, 2275 Sommers Rd\, O'Fallon\, MO 63367
+DESCRIPTION:Fr boys soccer. Home vs. Christian Brothers College.
+END:VEVENT
+BEGIN:VEVENT
+UID:lhs-fr-20260930-de-smet-jesuit@mshsaa
+DTSTAMP:20260101T000000Z
+SUMMARY:Liberty (Wentzville) Boys Soccer Home Game vs. De Smet Jesuit (Fr)
+DTSTART;TZID=America/Chicago:20260930T163000
+DTEND;TZID=America/Chicago:20260930T173000
+LOCATION:Liberty High School\, 2275 Sommers Rd\, O'Fallon\, MO 63367
+DESCRIPTION:Fr boys soccer. Home vs. De Smet Jesuit.
+END:VEVENT
+BEGIN:VEVENT
+UID:lhs-fr-20261008-timberland@mshsaa
+DTSTAMP:20260101T000000Z
+SUMMARY:Liberty (Wentzville) Boys Soccer Home Game vs. Timberland (Fr)
+DTSTART;TZID=America/Chicago:20261008T184500
+DTEND;TZID=America/Chicago:20261008T194500
+LOCATION:Liberty High School\, 2275 Sommers Rd\, O'Fallon\, MO 63367
+DESCRIPTION:Fr boys soccer. Home vs. Timberland.
+END:VEVENT
+BEGIN:VEVENT
+UID:lhs-fr-20261014-francis-howell@mshsaa
+DTSTAMP:20260101T000000Z
+SUMMARY:Liberty (Wentzville) Boys Soccer Away Game at Francis Howell (Fr)
+DTSTART;TZID=America/Chicago:20261014T170000
+DTEND;TZID=America/Chicago:20261014T180000
+LOCATION:Francis Howell High School\, 7001 MO-94\, St Charles\, MO 63304
+DESCRIPTION:Fr boys soccer. Away at Francis Howell.
+END:VEVENT
+BEGIN:VEVENT
+UID:lhs-fr-20261021-northwest-cedar-hill@mshsaa
+DTSTAMP:20260101T000000Z
+SUMMARY:Liberty (Wentzville) Boys Soccer Away Game at Northwest (Cedar Hill) (Fr)
+DTSTART;TZID=America/Chicago:20261021T163000
+DTEND;TZID=America/Chicago:20261021T173000
+LOCATION:Northwest High School\, 6005 Cedar Hill Rd\, Cedar Hill\, MO 63016
+DESCRIPTION:Fr boys soccer. Away at Northwest (Cedar Hill).
+END:VEVENT
+END:VCALENDAR
