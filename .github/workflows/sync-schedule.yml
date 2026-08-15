@@ -79,13 +79,19 @@ jobs:
             echo "No schedule changes."
           fi
 
+      # The message is built from scraped text, so it goes through the
+      # environment rather than being interpolated into the shell. A game
+      # against an opponent whose name contained a backtick would otherwise
+      # run as a command on the Mac.
       - name: Commit and push
         if: steps.classify.outputs.changed == 'true'
+        env:
+          COMMIT_MESSAGE: ${{ steps.classify.outputs.message }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add calendars/fr.ics calendars/jv.ics raw/fr.txt raw/jv.txt
-          git commit -m "${{ steps.classify.outputs.message }}"
+          git commit -m "$COMMIT_MESSAGE"
           git push
 
       - name: Summary
