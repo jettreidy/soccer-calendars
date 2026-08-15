@@ -1,0 +1,109 @@
+name: Sync MSHSAA schedule
+
+# Noon Central. Cron is UTC and does not follow DST: 17:00 UTC is noon CDT,
+# which covers the Aug-Nov season. Outside DST it lands at 11:00 CST.
+on:
+  schedule:
+    - cron: "0 17 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-schedule
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Playwright
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Capture schedule
+        run: python tools/scrape_mshsaa.py raw
+
+      - name: Regenerate calendars
+        run: |
+          cp calendars/fr.ics /tmp/fr.prev.ics
+          cp calendars/jv.ics /tmp/jv.prev.ics
+          python tools/generate_ics.py raw/fr.txt fr calendars/fr.ics
+          python tools/generate_ics.py raw/jv.txt jv calendars/jv.ics
+
+      # The generator exits non-zero on a degraded parse and leaves the old
+      # file in place, so reaching this step means both calendars are sound.
+      - name: Classify change
+        id: classify
+        run: |
+          set +e
+          python tools/diff_ics.py /tmp/fr.prev.ics calendars/fr.ics > /tmp/fr.diff 2>&1
+          FR=$?
+          python tools/diff_ics.py /tmp/jv.prev.ics calendars/jv.ics > /tmp/jv.diff 2>&1
+          JV=$?
+          set -e
+
+          echo "--- Freshman (exit $FR) ---"; cat /tmp/fr.diff
+          echo "--- Junior Varsity (exit $JV) ---"; cat /tmp/jv.diff
+
+          if [ "$FR" = "2" ] || [ "$JV" = "2" ]; then
+            cp /tmp/fr.prev.ics calendars/fr.ics
+            cp /tmp/jv.prev.ics calendars/jv.ics
+            echo "::error::Parser break suspected - calendars restored, nothing committed"
+            exit 1
+          fi
+
+          if [ "$FR" = "1" ] || [ "$JV" = "1" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            {
+              echo "message<<EOF"
+              echo "Schedule change from MSHSAA"
+              echo
+              [ "$FR" = "1" ] && sed 's/^/Freshman: /' /tmp/fr.diff
+              [ "$JV" = "1" ] && sed 's/^/Junior Varsity: /' /tmp/jv.diff
+              echo "EOF"
+            } >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No schedule changes."
+          fi
+
+      - name: Commit and push
+        if: steps.classify.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add calendars/fr.ics calendars/jv.ics raw/fr.txt raw/jv.txt
+          git commit -m "${{ steps.classify.outputs.message }}"
+          git push
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "### MSHSAA sync"
+            echo
+            if [ "${{ steps.classify.outputs.changed }}" = "true" ]; then
+              echo "**Status: CHANGED**"
+            elif [ "${{ steps.classify.outputs.changed }}" = "false" ]; then
+              echo "**Status: NO CHANGES**"
+            else
+              echo "**Status: FAILED**"
+            fi
+            echo
+            echo '```'
+            cat /tmp/fr.diff 2>/dev/null | sed 's/^/Freshman: /' || true
+            cat /tmp/jv.diff 2>/dev/null | sed 's/^/Junior Varsity: /' || true
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
