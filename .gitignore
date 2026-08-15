@@ -1,2 +1,6 @@
 __pycache__/
 *.pyc
+
+# Self-hosted GitHub Actions runner install. Contains 100MB+ binaries and
+# runner registration credentials -- never commit.
+actions-runner/
