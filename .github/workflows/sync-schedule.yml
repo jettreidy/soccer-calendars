@@ -28,7 +28,7 @@ jobs:
     timeout-minutes: 15
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       # macOS system Python is externally managed, so use a venv outside the
       # repo. Created once, reused on every later run.
