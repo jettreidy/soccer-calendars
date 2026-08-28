@@ -41,6 +41,7 @@ ADDRESSES = {
     "Francis Howell North": "Francis Howell North High School, 2549 Hackmann Rd, St Charles, MO 63303",
     "Ft. Zumwalt East": "Fort Zumwalt East High School, 600 First Executive Ave, St Peters, MO 63376",
     "Ft. Zumwalt West": "Fort Zumwalt West High School, 1251 Turtle Creek Dr, O'Fallon, MO 63366",
+    "Hazelwood West": "Hazelwood West High School, 1 Wildcat Lane, Hazelwood, MO 63042",
     "Helias Catholic": "Helias Catholic High School, 1305 Swifts Hwy, Jefferson City, MO 65109",
     "Kirkwood": "Kirkwood High School, 800 Dougherty Ferry Rd, Kirkwood, MO 63122",
     "Marquette": "Marquette High School, 2351 Clarkson Rd, Chesterfield, MO 63017",
@@ -57,6 +58,9 @@ ADDRESSES = {
 ROW_RE = re.compile(r"^(\d{1,2})/(\d{1,2})(?:-(\d{1,2}))?\s+(.*)$")
 TIME_RE = re.compile(r"\s+(\d{1,2}):(\d{2})\s*([ap])\.?m\.?$", re.I)
 CITY_RE = re.compile(r"\s+([A-Z][A-Za-z.'\- ]*,\s*[A-Z]{2})$")
+# MSHSAA appends a W-L record after a game is played: "(1-0)", "(12-3)".
+# City qualifiers like "(Cedar Hill)" stay; only a hyphenated integer pair is a record.
+RECORD_RE = re.compile(r"\s+\(\d+-\d+\)$")
 CLOCK_RE = re.compile(r"\d{1,2}:\d{2}")
 
 
@@ -116,6 +120,10 @@ def parse_row(line, year):
     if rest.lower().startswith("at "):
         away = True
         rest = rest[3:].strip()
+
+    # Strip a trailing record before the city suffix so "Quincy Quincy, IL (1-0)"
+    # still yields opponent "Quincy". Do not touch "(Cedar Hill)"-style qualifiers.
+    rest = RECORD_RE.sub("", rest).strip()
 
     # MSHSAA appends "City, ST" for out-of-area venues: "Quincy Quincy, IL".
     cm = CITY_RE.search(rest)

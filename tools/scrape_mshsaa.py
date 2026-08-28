@@ -23,7 +23,7 @@ from playwright.sync_api import sync_playwright
 URL = "https://www.mshsaa.org/MySchool/Schedule.aspx?s=965&alg=33"
 
 LEVELS = {"fr": "Freshman", "jv": "Junior Varsity"}
-EXPECTED = {"fr": 13, "jv": 17}
+EXPECTED = {"fr": 14, "jv": 17}
 MIN_ROWS = 5
 ATTEMPTS = 3
 
