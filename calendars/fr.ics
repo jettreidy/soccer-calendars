@@ -85,6 +85,15 @@ LOCATION:Liberty High School\, 2275 Sommers Rd\, O'Fallon\, MO 63367
 DESCRIPTION:Fr boys soccer. Home vs. Ft. Zumwalt East.
 END:VEVENT
 BEGIN:VEVENT
+UID:lhs-fr-20260923-hazelwood-west@mshsaa
+DTSTAMP:20260101T000000Z
+SUMMARY:Liberty (Wentzville) Boys Soccer Away Game at Hazelwood West (Fr)
+DTSTART;TZID=America/Chicago:20260923T163000
+DTEND;TZID=America/Chicago:20260923T173000
+LOCATION:Hazelwood West High School\, 1 Wildcat Lane\, Hazelwood\, MO 63042
+DESCRIPTION:Fr boys soccer. Away at Hazelwood West.
+END:VEVENT
+BEGIN:VEVENT
 UID:lhs-fr-20260929-christian-brothers-college@mshsaa
 DTSTAMP:20260101T000000Z
 SUMMARY:Liberty (Wentzville) Boys Soccer Home Game vs. Christian Brothers College (Fr)
