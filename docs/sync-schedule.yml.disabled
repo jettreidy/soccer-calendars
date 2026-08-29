@@ -1,3 +1,12 @@
+# DISABLED. Daily sync is now done by Soccer Bot. This file is kept as
+# documentation of the old GitHub Actions job. It is not under
+# .github/workflows/, so Actions will not load or queue it.
+#
+# Do not move this file back into .github/workflows/ or restore
+# schedule / workflow_dispatch triggers. Those would queue jobs for a
+# self-hosted runner that is no longer needed; failed queued jobs email
+# the repo owner.
+
 name: Sync MSHSAA schedule
 
 # Runs on a self-hosted runner on Jett's Mac. GitHub's hosted runners cannot

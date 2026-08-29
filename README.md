@@ -30,10 +30,9 @@ Event UIDs are keyed on date plus opponent, so adding or removing a game affects
 
 ## How it stays current
 
-A GitHub Actions workflow (`.github/workflows/sync-schedule.yml`) runs daily at
-noon Central. It scrapes the MSHSAA page with headless Chromium, regenerates
-both calendars, and commits only when something actually changed. Nothing runs
-on a personal machine, so the sync does not depend on a laptop being awake.
+The public subscribe URLs above stay the same. Both calendars are updated
+daily from the MSHSAA schedule page: scrape, regenerate, and commit only when
+something actually changed.
 
     tools/scrape_mshsaa.py   MSHSAA page -> raw/fr.txt, raw/jv.txt
     tools/generate_ics.py    raw rows    -> calendars/*.ics
@@ -44,12 +43,12 @@ regenerating an unchanged schedule reproduces each file byte for byte. A commit
 only ever appears when the schedule itself moved, and subscribers never see
 events churn.
 
-The workflow refuses to commit a degraded calendar. The generator exits non-zero
-if it parses fewer than 5 games, meets an away venue missing from its address
-map, or sees a row with a clock time it could not read. The differ exits 2 if
-most events vanished, many lost their locations, or many timed games became
+A degraded calendar is never published. The generator exits non-zero if it
+parses fewer than 5 games, meets an away venue missing from its address map,
+or sees a row with a clock time it could not read. The differ exits 2 if most
+events vanished, many lost their locations, or many timed games became
 all-day - a parser break rather than a schedule edit. Either case restores the
-previous files and fails the run loudly.
+previous files and fails loudly.
 
 ### New opponents
 
