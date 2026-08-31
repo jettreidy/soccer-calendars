@@ -58,9 +58,9 @@ ADDRESSES = {
 ROW_RE = re.compile(r"^(\d{1,2})/(\d{1,2})(?:-(\d{1,2}))?\s+(.*)$")
 TIME_RE = re.compile(r"\s+(\d{1,2}):(\d{2})\s*([ap])\.?m\.?$", re.I)
 CITY_RE = re.compile(r"\s+([A-Z][A-Za-z.'\- ]*,\s*[A-Z]{2})$")
-# MSHSAA appends a W-L record after a game is played: "(1-0)", "(12-3)".
-# City qualifiers like "(Cedar Hill)" stay; only a hyphenated integer pair is a record.
-RECORD_RE = re.compile(r"\s+\(\d+-\d+\)$")
+# MSHSAA appends a W-L or W-L-T record after a game is played: "(1-0)", "(0-0-1)".
+# City qualifiers like "(Cedar Hill)" stay; only hyphenated integers are a record.
+RECORD_RE = re.compile(r"\s+\(\d+-\d+(?:-\d+)?\)$")
 CLOCK_RE = re.compile(r"\d{1,2}:\d{2}")
 
 
