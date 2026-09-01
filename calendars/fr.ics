@@ -25,8 +25,8 @@ BEGIN:VEVENT
 UID:lhs-fr-20260901-francis-howell-north@mshsaa
 DTSTAMP:20260101T000000Z
 SUMMARY:Liberty (Wentzville) Boys Soccer Away Game at Francis Howell North (Fr)
-DTSTART;TZID=America/Chicago:20260901T163000
-DTEND;TZID=America/Chicago:20260901T173000
+DTSTART;TZID=America/Chicago:20260901T173000
+DTEND;TZID=America/Chicago:20260901T183000
 LOCATION:Francis Howell North High School\, 2549 Hackmann Rd\, St Charles\, MO 63303
 DESCRIPTION:Fr boys soccer. Away at Francis Howell North.
 END:VEVENT
