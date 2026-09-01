@@ -16,7 +16,7 @@ https://raw.githubusercontent.com/jettreidy/soccer-calendars/main/calendars/jv.i
 
 ## Subscribing
 
-Apple Calendar (Mac): File > New Calendar Subscription, paste the URL, set Location to iCloud so it syncs to iPhone and iPad, and Auto-refresh to Every day.
+Apple Calendar (Mac): File > New Calendar Subscription, paste the URL, set Location to iCloud so it syncs to iPhone and iPad, and Auto-refresh to Every hour or Every 5 minutes.
 
 Google Calendar: Other calendars > From URL.
 
