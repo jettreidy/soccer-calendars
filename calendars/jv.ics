@@ -32,11 +32,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lhs-jv-20260901-francis-howell-north@mshsaa
 DTSTAMP:20260101T000000Z
-SUMMARY:Liberty (Wentzville) Boys Soccer Home Game vs. Francis Howell North (JV)
-DTSTART;TZID=America/Chicago:20260901T173000
-DTEND;TZID=America/Chicago:20260901T190000
-LOCATION:Liberty High School\, 2275 Sommers Rd\, O'Fallon\, MO 63367
-DESCRIPTION:JV boys soccer. Home vs. Francis Howell North.
+SUMMARY:Liberty (Wentzville) Boys Soccer Francis Howell North (JV) - time TBD
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+DESCRIPTION:JV boys soccer. Francis Howell North. Start time not yet published by MSHSAA.
 END:VEVENT
 BEGIN:VEVENT
 UID:lhs-jv-20260903-francis-howell@mshsaa
