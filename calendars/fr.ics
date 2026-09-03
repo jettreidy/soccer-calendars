@@ -33,8 +33,8 @@ BEGIN:VEVENT
 UID:lhs-fr-20260903-francis-howell@mshsaa
 DTSTAMP:20260101T000000Z
 SUMMARY:Liberty (Wentzville) Boys Soccer Home Game vs. Francis Howell (Fr)
-DTSTART;TZID=America/Chicago:20260903T163000
-DTEND;TZID=America/Chicago:20260903T173000
+DTSTART;TZID=America/Chicago:20260903T173000
+DTEND;TZID=America/Chicago:20260903T183000
 LOCATION:Liberty High School\, 2275 Sommers Rd\, O'Fallon\, MO 63367
 DESCRIPTION:Fr boys soccer. Home vs. Francis Howell.
 END:VEVENT
