@@ -40,11 +40,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lhs-fr-20260908-ft-zumwalt-west@mshsaa
 DTSTAMP:20260101T000000Z
-SUMMARY:Liberty (Wentzville) Boys Soccer Away Game at Ft. Zumwalt West (Fr)
-DTSTART;TZID=America/Chicago:20260908T160000
-DTEND;TZID=America/Chicago:20260908T170000
-LOCATION:Fort Zumwalt West High School\, 1251 Turtle Creek Dr\, O'Fallon\, MO 63366
-DESCRIPTION:Fr boys soccer. Away at Ft. Zumwalt West.
+SUMMARY:Liberty (Wentzville) Boys Soccer Ft. Zumwalt West (Fr) - time TBD
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260909
+DESCRIPTION:Fr boys soccer. Ft. Zumwalt West. Start time not yet published by MSHSAA.
 END:VEVENT
 BEGIN:VEVENT
 UID:lhs-fr-20260909-francis-howell-central@mshsaa

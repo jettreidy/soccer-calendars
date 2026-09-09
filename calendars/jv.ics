@@ -48,11 +48,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lhs-jv-20260908-ft-zumwalt-west@mshsaa
 DTSTAMP:20260101T000000Z
-SUMMARY:Liberty (Wentzville) Boys Soccer Home Game vs. Ft. Zumwalt West (JV)
-DTSTART;TZID=America/Chicago:20260908T170000
-DTEND;TZID=America/Chicago:20260908T183000
-LOCATION:Liberty High School\, 2275 Sommers Rd\, O'Fallon\, MO 63367
-DESCRIPTION:JV boys soccer. Home vs. Ft. Zumwalt West.
+SUMMARY:Liberty (Wentzville) Boys Soccer Ft. Zumwalt West (JV) - time TBD
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260909
+DESCRIPTION:JV boys soccer. Ft. Zumwalt West. Start time not yet published by MSHSAA.
 END:VEVENT
 BEGIN:VEVENT
 UID:lhs-jv-20260910-francis-howell-central@mshsaa
