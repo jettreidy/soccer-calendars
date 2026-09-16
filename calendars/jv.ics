@@ -64,11 +64,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lhs-jv-20260915-troy-buchanan@mshsaa
 DTSTAMP:20260101T000000Z
-SUMMARY:Liberty (Wentzville) Boys Soccer Away Game at Troy Buchanan (JV)
-DTSTART;TZID=America/Chicago:20260915T160000
-DTEND;TZID=America/Chicago:20260915T173000
-LOCATION:Troy Buchanan High School\, 1190 Old Cap Au Gris Rd\, Troy\, MO 63379
-DESCRIPTION:JV boys soccer. Away at Troy Buchanan.
+SUMMARY:Liberty (Wentzville) Boys Soccer Troy Buchanan (JV) - time TBD
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260916
+DESCRIPTION:JV boys soccer. Troy Buchanan. Start time not yet published by MSHSAA.
 END:VEVENT
 BEGIN:VEVENT
 UID:lhs-jv-20260922-kirkwood@mshsaa
