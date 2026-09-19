@@ -64,11 +64,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lhs-fr-20260918-marquette@mshsaa
 DTSTAMP:20260101T000000Z
-SUMMARY:Liberty (Wentzville) Boys Soccer Away Game at Marquette (Fr)
-DTSTART;TZID=America/Chicago:20260918T173000
-DTEND;TZID=America/Chicago:20260918T183000
-LOCATION:Marquette High School\, 2351 Clarkson Rd\, Chesterfield\, MO 63017
-DESCRIPTION:Fr boys soccer. Away at Marquette.
+SUMMARY:Liberty (Wentzville) Boys Soccer Marquette (Fr) - time TBD
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+DESCRIPTION:Fr boys soccer. Marquette. Start time not yet published by MSHSAA.
 END:VEVENT
 BEGIN:VEVENT
 UID:lhs-fr-20260921-ft-zumwalt-east@mshsaa
