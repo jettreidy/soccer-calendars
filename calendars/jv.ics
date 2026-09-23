@@ -72,11 +72,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lhs-jv-20260922-kirkwood@mshsaa
 DTSTAMP:20260101T000000Z
-SUMMARY:Liberty (Wentzville) Boys Soccer Away Game at Kirkwood (JV)
-DTSTART;TZID=America/Chicago:20260922T163000
-DTEND;TZID=America/Chicago:20260922T180000
-LOCATION:Kirkwood High School\, 800 Dougherty Ferry Rd\, Kirkwood\, MO 63122
-DESCRIPTION:JV boys soccer. Away at Kirkwood.
+SUMMARY:Liberty (Wentzville) Boys Soccer Kirkwood (JV) - time TBD
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20260923
+DESCRIPTION:JV boys soccer. Kirkwood. Start time not yet published by MSHSAA.
 END:VEVENT
 BEGIN:VEVENT
 UID:lhs-jv-20260924-rock-bridge@mshsaa
