@@ -80,11 +80,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lhs-jv-20260924-rock-bridge@mshsaa
 DTSTAMP:20260101T000000Z
-SUMMARY:Liberty (Wentzville) Boys Soccer Away Game at Rock Bridge (JV)
-DTSTART;TZID=America/Chicago:20260924T170000
-DTEND;TZID=America/Chicago:20260924T183000
-LOCATION:Rock Bridge High School\, 4303 S Providence Rd\, Columbia\, MO 65203
-DESCRIPTION:JV boys soccer. Away at Rock Bridge.
+SUMMARY:Liberty (Wentzville) Boys Soccer Rock Bridge (JV) - time TBD
+DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20260925
+DESCRIPTION:JV boys soccer. Rock Bridge. Start time not yet published by MSHSAA.
 END:VEVENT
 BEGIN:VEVENT
 UID:lhs-jv-20261001-quincy@mshsaa
