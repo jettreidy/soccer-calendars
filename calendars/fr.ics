@@ -88,11 +88,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lhs-fr-20260929-christian-brothers-college@mshsaa
 DTSTAMP:20260101T000000Z
-SUMMARY:Liberty (Wentzville) Boys Soccer Home Game vs. Christian Brothers College (Fr)
-DTSTART;TZID=America/Chicago:20260929T163000
-DTEND;TZID=America/Chicago:20260929T173000
-LOCATION:Liberty High School\, 2275 Sommers Rd\, O'Fallon\, MO 63367
-DESCRIPTION:Fr boys soccer. Home vs. Christian Brothers College.
+SUMMARY:Liberty (Wentzville) Boys Soccer Christian Brothers College (Fr) - time TBD
+DTSTART;VALUE=DATE:20260929
+DTEND;VALUE=DATE:20260930
+DESCRIPTION:Fr boys soccer. Christian Brothers College. Start time not yet published by MSHSAA.
 END:VEVENT
 BEGIN:VEVENT
 UID:lhs-fr-20260930-de-smet-jesuit@mshsaa
