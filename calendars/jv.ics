@@ -97,11 +97,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lhs-jv-20261005-timberland@mshsaa
 DTSTAMP:20260101T000000Z
-SUMMARY:Liberty (Wentzville) Boys Soccer Home Game vs. Timberland (JV)
-DTSTART;TZID=America/Chicago:20261005T170000
-DTEND;TZID=America/Chicago:20261005T183000
-LOCATION:Liberty High School\, 2275 Sommers Rd\, O'Fallon\, MO 63367
-DESCRIPTION:JV boys soccer. Home vs. Timberland.
+SUMMARY:Liberty (Wentzville) Boys Soccer Timberland (JV) - time TBD
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+DESCRIPTION:JV boys soccer. Timberland. Start time not yet published by MSHSAA.
 END:VEVENT
 BEGIN:VEVENT
 UID:lhs-jv-20261008-chaminade-college-prep@mshsaa
