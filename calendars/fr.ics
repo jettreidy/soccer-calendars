@@ -105,8 +105,8 @@ BEGIN:VEVENT
 UID:lhs-fr-20261008-timberland@mshsaa
 DTSTAMP:20260101T000000Z
 SUMMARY:Liberty (Wentzville) Boys Soccer Home Game vs. Timberland (Fr)
-DTSTART;TZID=America/Chicago:20261008T184500
-DTEND;TZID=America/Chicago:20261008T194500
+DTSTART;TZID=America/Chicago:20261008T170000
+DTEND;TZID=America/Chicago:20261008T180000
 LOCATION:Liberty High School\, 2275 Sommers Rd\, O'Fallon\, MO 63367
 DESCRIPTION:Fr boys soccer. Home vs. Timberland.
 END:VEVENT
