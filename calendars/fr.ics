@@ -112,11 +112,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lhs-fr-20261014-francis-howell@mshsaa
 DTSTAMP:20260101T000000Z
-SUMMARY:Liberty (Wentzville) Boys Soccer Away Game at Francis Howell (Fr)
-DTSTART;TZID=America/Chicago:20261014T180000
-DTEND;TZID=America/Chicago:20261014T190000
-LOCATION:Francis Howell High School\, 7001 MO-94\, St Charles\, MO 63304
-DESCRIPTION:Fr boys soccer. Away at Francis Howell.
+SUMMARY:Liberty (Wentzville) Boys Soccer Francis Howell (Fr) - time TBD
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+DESCRIPTION:Fr boys soccer. Francis Howell. Start time not yet published by MSHSAA.
 END:VEVENT
 BEGIN:VEVENT
 UID:lhs-fr-20261015-warrenton@mshsaa
