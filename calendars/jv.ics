@@ -112,11 +112,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lhs-jv-20261015-helias-catholic@mshsaa
 DTSTAMP:20260101T000000Z
-SUMMARY:Liberty (Wentzville) Boys Soccer Home Game vs. Helias Catholic (JV)
-DTSTART;TZID=America/Chicago:20261015T170000
-DTEND;TZID=America/Chicago:20261015T183000
-LOCATION:Liberty High School\, 2275 Sommers Rd\, O'Fallon\, MO 63367
-DESCRIPTION:JV boys soccer. Home vs. Helias Catholic.
+SUMMARY:Liberty (Wentzville) Boys Soccer Helias Catholic (JV) - time TBD
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+DESCRIPTION:JV boys soccer. Helias Catholic. Start time not yet published by MSHSAA.
 END:VEVENT
 BEGIN:VEVENT
 UID:lhs-jv-20261016-jv-gac-cup-semi@mshsaa
