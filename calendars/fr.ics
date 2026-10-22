@@ -120,10 +120,9 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lhs-fr-20261021-northwest-cedar-hill@mshsaa
 DTSTAMP:20260101T000000Z
-SUMMARY:Liberty (Wentzville) Boys Soccer Away Game at Northwest (Cedar Hill) (Fr)
-DTSTART;TZID=America/Chicago:20261021T163000
-DTEND;TZID=America/Chicago:20261021T173000
-LOCATION:Northwest High School\, 6005 Cedar Hill Rd\, Cedar Hill\, MO 63016
-DESCRIPTION:Fr boys soccer. Away at Northwest (Cedar Hill).
+SUMMARY:Liberty (Wentzville) Boys Soccer Northwest (Cedar Hill) (Fr) - time TBD
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+DESCRIPTION:Fr boys soccer. Northwest (Cedar Hill). Start time not yet published by MSHSAA.
 END:VEVENT
 END:VCALENDAR
